@@ -17,7 +17,8 @@ jobs:
     
      - name: Build KinuxOS
        run: |
-         sudo build-os/build.sh
+         chmod +x ./build-os/build.sh
+         ./build-os/build.sh
       
      - name: Upload Build Artifacts
        uses: actions/upload-artifact@v2
