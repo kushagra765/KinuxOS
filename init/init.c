@@ -12,7 +12,7 @@
 #include "../kernel/irq.h"
 #include "../include/kinux/terminal.h"
 
-void main() {
+void init() {
      putstr("[KERNEL] Loading Kernel\n", COLOR_WHT, COLOR_BLK); 
      putstr("[KINUX] Loading the GDT...\n", COLOR_WHT, COLOR_BLK);
      init_gdt();
