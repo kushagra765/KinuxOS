@@ -10,7 +10,6 @@
 #include "../kernel/gdt.h"
 #include "../kernel/isr.h"
 #include "../kernel/irq.h"
-#include "../drivers/timer/timer.h"
 #include "../include/kinux/terminal.h"
 
 void main() {
