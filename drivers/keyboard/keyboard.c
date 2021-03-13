@@ -4,7 +4,6 @@
 
 #include "../../include/kinux/ports.h"
 #include "../vga/vga.h"
-#include "../../kernel/isr.h"
 #include "../../kernel/irq.h"
 #include "../../include/stdint.h"
 #include "keyboard.h"
@@ -48,7 +47,7 @@ uint8_t keyboard_layout[128] = {
     0,	
 };
 
-void handler_keyboard(struct registers *regs) {
+void handler_keyboard() {
      uint8_t keyboard_key_scancode;
      
      keyboard_key_scancode = byte_in(DATA_PORT);
