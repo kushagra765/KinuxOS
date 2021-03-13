@@ -1,7 +1,7 @@
 #ifndef _STDIO_H
 #define _STDIO_H
 
-#include <stddef.h>
+#include "stddef.h"
 
 /* include/stdio.h
  * Author - @kushagra765
