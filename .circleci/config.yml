@@ -1,0 +1,17 @@
+version: 2.1
+filters:
+   branches:
+      only:
+        - main
+jobs:
+  build:
+    machine:
+      image: 'ubuntu-2004:202010-01'
+    steps:
+      - checkout
+      - run: echo "Building the OS"
+      - run:
+          name: Build KinuxOS
+          command: |
+            chmod +x ./build-os/build.sh
+            ./build-os/build.sh
