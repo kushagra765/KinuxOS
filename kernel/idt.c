@@ -36,6 +36,4 @@ void init_idt() {
      memset(&idt, 0, sizeof(struct entry_idt)*256);
      
      idt_load();
-    
 }
-
