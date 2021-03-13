@@ -1,3 +1,4 @@
+workflow:
 version: 2.1
 filters:
    branches:
