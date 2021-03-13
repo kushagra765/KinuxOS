@@ -1,6 +1,10 @@
 #ifndef _STDLIB_H
 #define _STDLIB_H
 
+/* include/stdlib.h
+ * Author - @kushagra765
+ */
+
 #include "stddef.h"
 
 void *malloc(size_t size);
