@@ -1,6 +1,4 @@
 # KinuxOS
-[![CodeFactor](https://www.codefactor.io/repository/github/kushagra765/kinuxos/badge)](https://www.codefactor.io/repository/github/kushagra765/kinuxos)
-<br/>
 ![License](https://img.shields.io/badge/license-Apache%202.0-blue?style=flat-square)
 <br/>
 
