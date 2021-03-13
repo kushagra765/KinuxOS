@@ -12,6 +12,7 @@ KinuxOS is an operating system for x86_64 based systems. It uses the Kinux Kerne
 3. ISR
 4. IRQ
 5. VGA Driver
+6. Keyboard Driver
 
 # Building
 To build KinuxOS you need i686-elf-gcc, to ***install it*** run .```/build_compiler.sh```. If you have already installed the i686-elf-gcc, modify the PATH in the build.sh and run it.
