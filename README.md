@@ -4,7 +4,7 @@
 ![License](https://img.shields.io/badge/license-Apache%202.0-blue?style=flat-square)
 <br/>
 
-KinuxOS is an operating system for x86_64 based systems. It uses the Kinux Kernel.
+KinuxOS is an operating system for x86_64 based systems.
 
 # Features
 1. GDT
