@@ -10,12 +10,19 @@ For .c files:
 /* directory/file.c
  * Author - @name
  * /
+
+//Code
 ```
 
 For .h files:
 
 ```
+#ifndef _HEADER_H
+#define _HEADER_H
+
 /* directory/file.h
  * Author - @name
  * /
+
+#endif //_HEADER_H
 ```
