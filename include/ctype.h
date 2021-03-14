@@ -1,6 +1,10 @@
 #ifndef _CTYPE_H
 #define _CTYPE_H
 
+/* include/ctype.h
+ * Author - @kushagra765
+ */
+
 int isalpha(int ch);
 int isalnum(int ch);
 int isblank(int ch);

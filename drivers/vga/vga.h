@@ -2,8 +2,8 @@
 #define _VGA_H
 
 /* drivers/vga/vga.h
-   Author - @jaychandra6
-*/
+ * Author - @jaychandra6
+ */
 
 //define basic constants
 #define VGA_START 0xb8000 //VGA start address

@@ -1,7 +1,7 @@
 /* drivers/ports/ports.c
  * Author - @jaychandra6
  * Edited by - @kushagra765
-*/
+ */
 
 #include "../../include/kinux/ports.h"
 

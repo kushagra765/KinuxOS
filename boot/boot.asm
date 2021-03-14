@@ -27,8 +27,8 @@ multiboot:
     dd start
 
 stublet:
-     extern main
-     call main
+     extern init
+     call init
      jmp $
 
 SECTION .bss

@@ -1,6 +1,6 @@
 /* drivers/vga/vga.c
-   Author - @jaychandra6
-*/
+ *  Author - @jaychandra6
+ */
 
 #include "../../include/kinux/ports.h"
 #include "vga.h"
