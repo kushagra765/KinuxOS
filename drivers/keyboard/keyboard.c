@@ -1,6 +1,6 @@
 /* drivers/keyboard/keyboard.c
  * Author - @kushagra765
-*/
+ */
 
 #include "../../include/kinux/ports.h"
 #include "../vga/vga.h"
