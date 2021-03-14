@@ -4,8 +4,6 @@
 
 #include "../drivers/vga/vga.h"
 #include "../drivers/keyboard/keyboard.h"
-#include "../include/kinux/ports.h"
-#include "../include/stdint.h"
 #include "../kernel/idt.h"
 #include "../kernel/gdt.h"
 #include "../kernel/isr.h"
