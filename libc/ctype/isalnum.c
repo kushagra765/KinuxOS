@@ -4,6 +4,6 @@
 
 #include "../../include/ctype.h"
 
-int isalnum(int c) {
-    return isdigit(c) || isalpha(c);
+int isalnum(int ch) {
+    return isdigit(ch) || isalpha(ch);
 }
