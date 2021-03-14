@@ -1,11 +1,9 @@
 #ifndef _KEYBOARD_H
 #define _KEYBOARD_H
 
-#include "../../kernel/isr.h"
-
 /* drivers/keyboard/keyboard.h
  * Author - @kushagra765
-*/
+ */
 
 /* PS/2 Keyboard Driver */
 
