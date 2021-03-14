@@ -1,6 +1,6 @@
 /* init/init.c
  * Author - @kushagra765
-*/
+ */
 
 #include "../drivers/vga/vga.h"
 #include "../drivers/keyboard/keyboard.h"
