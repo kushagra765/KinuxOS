@@ -19,6 +19,8 @@ KinuxOS is an operating system for x86_64 based systems.
 # Building
 To build KinuxOS you need i686-elf-gcc, to ***install it*** run .```/build_compiler.sh```. If you have already installed the i686-elf-gcc, modify the PATH in the build.sh and run it.
 
+If you want to build the libc, run ```./libc/build_libc.sh```.
+
 # Contributing
 To contribute to KinuxOS, please read the [CONTRIBUTING.md](https://github.com/kushagra765/KinuxOS/blob/dev/CONTRIBUTING.md) file.
 
