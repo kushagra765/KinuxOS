@@ -13,6 +13,7 @@ nasm -felf32 ./boot/boot.asm -o ./build/boot.o
 i686-elf-gcc -Wall -Wextra -O2 -c ./drivers/vga/vga.c -o ./build/vga.o
 i686-elf-gcc -Wall -Wextra -O2 -c ./drivers/ports/ports.c -o ./build/ports.o
 i686-elf-gcc -Wall -Wextra -O2 -c ./drivers/keyboard/keyboard.c -o ./build/keyboard.o 
+i686-elf-gcc -Wall -Wextra -O2 -c ./drivers/timer/timer.c -o ./build/timer.o
 
 # Build OS
 nasm -felf32 ./kernel/load_gdt.asm -o ./build/load_gdt.o
@@ -27,7 +28,7 @@ i686-elf-gcc -Wall -Wextra -O2 -c ./kernel/irq.c -o ./build/irq.o
 i686-elf-gcc -Wall -Wextra -O2 -c ./kernel/terminal.c -o ./build/terminal.o
 
 # Link KinuxOS
-i686-elf-gcc -T linker.ld -o kinuxOS.bin -O2 -nostdlib ./build/boot.o ./build/vga.o ./build/ports.o ./build/keyboard.o ./build/init.o ./build/gdt.o ./build/load_gdt.o ./build/idt.o ./build/load_idt.o ./build/isr.o ./build/load_isr.o ./build/irq.o ./build/load_irq.o ./build/terminal.o
+i686-elf-gcc -T linker.ld -o kinuxOS.bin -O2 -nostdlib ./build/boot.o ./build/vga.o ./build/ports.o ./build/keyboard.o ./build/timer.o ./build/init.o ./build/gdt.o ./build/load_gdt.o ./build/idt.o ./build/load_idt.o ./build/isr.o ./build/load_isr.o ./build/irq.o ./build/load_irq.o ./build/terminal.o
 
 # Generate ISO
 mkdir -p isodir/boot/grub
