@@ -21,4 +21,4 @@ jobs:
        uses: actions/upload-artifact@v2
        with:
          name: kinuxOS.iso
-         path: $HOME/src/KinuxOS-main/
+         path: $HOME/src/KinuxOS-main/kinuxOS.iso
