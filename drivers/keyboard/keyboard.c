@@ -57,7 +57,7 @@ void handler_keyboard() {
      
      }
      else {
-        putchar(keyboard_layout[keyboard_key_scancode], COLOR_WHT, COLOR_LBU);
+        putchar(keyboard_layout[keyboard_key_scancode], COLOR_BLK, COLOR_WHT);
      }
 }
 
