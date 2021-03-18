@@ -12,25 +12,7 @@ jobs:
      - name: Checkout
        uses: actions/checkout@v2
      
-     - name: Cache Toolchain
-       uses: actions/cache@v2
-       env:
-        cache-name: cache-toolchain
-       with:
-         path: |
-           **/cross/
-         key: ${{ runner.os }}-toolchain-${{ env.cache-name }}-${{ hashFiles('**/build-os/build.sh') }}
-         restore-keys: |
-           ${{ runner.os }}-toolchain-${{ env.cache-name }}-${{ hashFiles('**/build-os/build.sh') }}
-
-    
      - name: Build KinuxOS
        run: |
          chmod +x ./build-os/build.sh
          ./build-os/build.sh
-      
-     - name: Upload Build Artifacts
-       uses: actions/upload-artifact@v2
-       with:
-         name: kinuxOS.iso
-         path: $HOME/src/KinuxOS-main/kinuxOS.iso
