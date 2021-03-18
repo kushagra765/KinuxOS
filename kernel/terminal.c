@@ -13,7 +13,7 @@ void terminal() {
 void run(char command[]) {
 
     if (strcmp(command, "version")==0) {
-        putstr("v0.1\n", COLOR_BLK, COLOR_WHT);
+        putstr("v0.2\n", COLOR_BLK, COLOR_WHT);
     }
     else if (strcmp(command, "about")==0) {
         putstr("KinuxOS\n", COLOR_BLK, COLOR_WHT);
