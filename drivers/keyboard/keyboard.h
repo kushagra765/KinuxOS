@@ -1,6 +1,8 @@
 #ifndef _KEYBOARD_H
 #define _KEYBOARD_H
 
+#include "../../include/stdint.h"
+
 /* drivers/keyboard/keyboard.h
  * Author - @kushagra765
  */
@@ -15,5 +17,8 @@ void init_keyboard();
 
 /* Keyboard Handler */
 void handler_keyboard();
+
+/* Save Input Buf */
+void save_buf(uint8_t input);
 
 #endif //_KEYBOARD_H
