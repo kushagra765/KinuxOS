@@ -5,6 +5,7 @@
 #include "../../include/kinux/ports.h"
 #include "../vga/vga.h"
 #include "../../kernel/irq.h"
+#include "../../include/kinux/terminal.h"
 #include "../../include/stdint.h"
 #include "keyboard.h"
 
@@ -57,8 +58,25 @@ void handler_keyboard() {
      
      }
      else {
-        putchar(keyboard_layout[keyboard_key_scancode], COLOR_BLK, COLOR_WHT);
-     }
+       uint8_t input = keyboard_layout[keyboard_key_scancode];
+       putchar(input, COLOR_BLK, COLOR_WHT);
+       save_buf(input);
+    }
+}
+
+uint8_t buf[40];
+int num = 0;
+
+void save_buf(uint8_t input) {
+
+    if (input == '\n') {
+        run(buf);
+        num = 0;
+    }
+    else {
+       buf[num] = input;
+       num++; 
+    }
 }
 
 void init_keyboard() {
