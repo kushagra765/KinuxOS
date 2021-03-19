@@ -3,7 +3,7 @@
  * Edited by - @kushagra765
  */
 
-#include "../../include/kinux/ports.h"
+#include <ports.h>
 
 unsigned char byte_in(unsigned short port) {
 	unsigned char result;
