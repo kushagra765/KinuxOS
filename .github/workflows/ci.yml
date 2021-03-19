@@ -12,6 +12,19 @@ jobs:
      - name: Checkout
        uses: actions/checkout@v2
      
+     - name: Cache Toolchain
+       uses: actions/cache@v2
+       env:
+         cache-name: cache-toolchain
+       with:
+         path: |
+           $HOME/cross/
+         key: |
+           ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/build-os/build.sh') }}
+           ${{ runner.os }}-build-
+           ${{ runner.os }}-
+             
+     
      - name: Build KinuxOS
        run: |
          chmod +x ./build-os/build.sh
