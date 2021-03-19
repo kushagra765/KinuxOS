@@ -15,11 +15,11 @@ void run(char command[]) {
     if (strcmp(command, "version")==0) {
         putstr("v0.2\n", COLOR_BLK, COLOR_WHT);
     }
-    else if (strcmp(command, "about")==0) {
+    else if (strcmp(command, "uname")==0) {
         putstr("KinuxOS\n", COLOR_BLK, COLOR_WHT);
     }
     else if (strcmp(command, "help")==0) {
-        putstr("Available Commands: version about help\n", COLOR_BLK, COLOR_WHT);
+        putstr("Available Commands: version uname help\n", COLOR_BLK, COLOR_WHT);
     }
     else {
         putstr("Command Not Found!\n", COLOR_BLK, COLOR_WHT); 
