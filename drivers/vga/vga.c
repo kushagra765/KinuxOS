@@ -2,7 +2,7 @@
  *  Author - @jaychandra6
  */
 
-#include "../../include/kinux/ports.h"
+#include <ports.h>
 #include "vga.h"
 
 volatile vga_char *TEXT_AREA = (vga_char*) VGA_START;
