@@ -1,7 +1,7 @@
 #ifndef _GDT_H
 #define _GDT_H
 
-#include "../include/stdint.h"
+#include <stdint.h>
 
 void init_gdt();
 extern void gdt_load();

@@ -1,7 +1,7 @@
 #ifndef _IDT_H
 #define _IDT_H
 
-#include "../include/stdint.h"
+#include <stdint.h>
 
 void init_idt();
 extern void idt_load();
