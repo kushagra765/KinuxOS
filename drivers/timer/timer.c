@@ -2,8 +2,8 @@
  * Author - @kushagra765
  */
 
-#include "../../include/kinux/ports.h"
-#include "../../kernel/irq.h"
+#include <ports.h>
+#include <irq.h>
 #include "timer.h"
 
 int kernel_timer_ticks = 0;

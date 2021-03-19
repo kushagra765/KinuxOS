@@ -1,7 +1,7 @@
+#include <vga.h>
 #include "isr.h"
 #include "idt.h"
-#include "../include/kinux/kernel.h"
-#include "../include/stdint.h"
+#include <stdint.h>
 
 void init_isr() {
      
@@ -80,6 +80,6 @@ const char *exceptions[] = {
 void handler_isr(struct registers *regs) {
      
      if (regs->int_no <= 31) {
-        
+        putstr(exceptions[regs->int_no], COLOR_RED, COLOR_WHT);
      }
 }

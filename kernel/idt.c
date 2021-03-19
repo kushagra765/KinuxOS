@@ -1,5 +1,5 @@
-#include "../include/stdint.h"
-#include "../include/string.h"
+#include <stdint.h>
+#include <string.h>
 #include "idt.h"
 
 struct entry_idt {

@@ -1,7 +1,7 @@
 #ifndef _KEYBOARD_H
 #define _KEYBOARD_H
 
-#include "../../include/stdint.h"
+#include <stdint.h>
 
 /* drivers/keyboard/keyboard.h
  * Author - @kushagra765

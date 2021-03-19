@@ -2,11 +2,11 @@
  * Author - @kushagra765
  */
 
-#include "../include/kinux/ports.h"
+#include <ports.h>
 #include "irq.h"
 #include "idt.h"
 #include "isr.h"
-#include "../include/stdint.h"
+#include <stdint.h>
 
 void *kernel_routines_irq[16] = {
      0, 0, 0, 0, 0, 0, 0, 0,
