@@ -2,14 +2,14 @@
  * Author - @kushagra765
  */
 
-#include "../drivers/vga/vga.h"
-#include "../drivers/keyboard/keyboard.h"
-#include "../drivers/timer/timer.h"
-#include "../kernel/idt.h"
-#include "../kernel/gdt.h"
-#include "../kernel/isr.h"
-#include "../kernel/irq.h"
-#include "../include/kinux/terminal.h"
+#include <vga.h>
+#include <keyboard.h>
+#include <timer.h>
+#include <idt.h>
+#include <gdt.h>
+#include <isr.h>
+#include <irq.h>
+#include <terminal.h>
 
 void init() {
      clearwin(COLOR_WHT, COLOR_WHT);
