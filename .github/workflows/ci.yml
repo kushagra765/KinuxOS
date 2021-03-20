@@ -34,9 +34,3 @@ jobs:
        run: |
          chmod +x ./build.sh
          ./build.sh
-         
-     - name: Upload Build Artifact
-       uses: actions/upload-artifact@v2
-       with:
-         name: kinuxOS-build.iso
-         path: $HOME/src/KinuxOS-main/kinuxOS.iso
