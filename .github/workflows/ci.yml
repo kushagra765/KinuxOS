@@ -36,4 +36,7 @@ jobs:
          ./build.sh
          
      - name: Upload Build Artifact
-       uses: 
+       uses: actions/upload-artifact@v2
+       with:
+         name: kinuxOS-build.iso
+         path: $HOME/src/KinuxOS-main/kinuxOS.iso
