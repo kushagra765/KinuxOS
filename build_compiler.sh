@@ -1,5 +1,12 @@
 #!/bin/sh
 
+if [ -d "$HOME/cross" ]; then
+    echo "Found Toolchain"
+    exit 0;
+else
+    continue;
+fi
+
 sudo apt-get update
 sudo apt install nasm make gcc bison flex libgmp3-dev libmpc-dev libmpfr-dev texinfo libisl-dev tar xorriso
 

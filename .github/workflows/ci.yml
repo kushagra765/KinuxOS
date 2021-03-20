@@ -11,8 +11,29 @@ jobs:
     steps:
      - name: Checkout
        uses: actions/checkout@v2
+       
+     - name: Cache Toolchain
+       uses: actions/cache@v2
+       env:
+         cache-name: cache-toolchain
+       with:
+         path: |
+           $HOME/cross
+         key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/build_compiler.sh') }}
+         restore-keys: |
+          ${{ runner.os }}-build-${{ env.cache-name }}-
+          ${{ runner.os }}-build-
+          ${{ runner.os }}-
+         
+     - name: Build Toolchain
+       run: |
+         chmod +x ./build_compiler.sh
+         ./build_compiler.sh
      
      - name: Build KinuxOS
        run: |
-         chmod +x ./build-os/build.sh
-         ./build-os/build.sh
+         chmod +x ./build.sh
+         ./build.sh
+         
+     - name: Upload Build Artifact
+       uses: 
