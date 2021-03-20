@@ -39,6 +39,3 @@ mkdir -p isodir/boot/grub
 cp kinuxOS.bin isodir/boot/kinuxOS.bin
 cp grub.cfg isodir/boot/grub/grub.cfg
 grub-mkrescue -o kinuxOS.iso isodir
-
-# Run KinuxOS
-qemu-system-x86_64 kinuxOS.iso
