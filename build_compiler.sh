@@ -8,7 +8,7 @@ else
 fi
 
 sudo apt-get update
-sudo apt install nasm make gcc bison flex libgmp3-dev libmpc-dev libmpfr-dev texinfo libisl-dev tar xorriso
+sudo apt install nasm make gcc bison flex libgmp3-dev libmpc-dev libmpfr-dev texinfo libisl-dev tar xorriso mtools
 
 export PREFIX="$HOME/cross"
 export TARGET=i686-elf
