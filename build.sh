@@ -3,7 +3,7 @@
 export TARGET=i686-elf
 
 # Change the PATH to where you have installed the i686-elf-gcc compiler
-export PATH="$HOME/cross/bin:$PATH"
+export PATH="./compiler/toolchain/bin:$PATH"
 
 # Build KinuxOS
 mkdir build

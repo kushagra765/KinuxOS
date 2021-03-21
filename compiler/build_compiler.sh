@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if [ -d "$HOME/cross" ]; then
+if [ -d "toolchain/" ]; then
     echo "Found Toolchain"
     exit 0;
 else
@@ -10,17 +10,26 @@ fi
 sudo apt-get update
 sudo apt install nasm make gcc bison flex libgmp3-dev libmpc-dev libmpfr-dev texinfo libisl-dev tar xorriso mtools
 
-export PREFIX="$HOME/cross"
+export PREFIX="/toolchain"
 export TARGET=i686-elf
 export PATH="$PREFIX/bin:$PATH"
 
-mkdir $HOME/cross
+mkdir ./toolchain
 
-mkdir $HOME/src
-cd $HOME/src
+mkdir ./src
+cd ./src
 
-wget https://ftp.gnu.org/gnu/binutils/binutils-2.36.tar.gz
-wget https://ftp.gnu.org/gnu/gcc/gcc-10.2.0/gcc-10.2.0.tar.gz
+if [ -e binutils-2.36.tar.gz ]; then
+   echo "Found binutils archive"
+else
+   wget https://ftp.gnu.org/gnu/binutils/binutils-2.36.tar.gz
+fi
+
+if [ -e gcc-10.2.0.tar.gz ]; then
+   echo "Found gcc archive"
+else
+   wget https://ftp.gnu.org/gnu/gcc/gcc-10.2.0/gcc-10.2.0.tar.gz
+fi
 
 tar -xf gcc-10.2.0.tar.gz
 tar -xf binutils-2.36.tar.gz
@@ -31,7 +40,7 @@ cd binutils-build
 make
 make install
 
-cd $HOME/src
+cd ..
 
 which -- $TARGET-as || echo $TARGET-as not found
  
