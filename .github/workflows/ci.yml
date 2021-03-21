@@ -24,8 +24,8 @@ jobs:
         
      - name: Build Toolchain
        run: |
-         chmod +x ./build_compiler.sh
-         ./build_compiler.sh
+         chmod +x ./compiler/build_compiler.sh
+         ./compiler/build_compiler.sh
      
      - name: Build KinuxOS
        run: |
