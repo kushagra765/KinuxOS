@@ -34,6 +34,3 @@ jobs:
        run: |
          chmod +x ./build.sh
          ./build.sh
-         
-     - name: Upload Build Artifact
-       uses: 
