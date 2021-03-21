@@ -18,13 +18,10 @@ jobs:
          cache-name: cache-toolchain
        with:
          path: |
-           $HOME/cross
+           **/compiler
          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/build_compiler.sh') }}
-         restore-keys: |
-          ${{ runner.os }}-build-${{ env.cache-name }}-
-          ${{ runner.os }}-build-
-          ${{ runner.os }}-
-         
+         restore-keys: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/build_compiler.sh') }}
+        
      - name: Build Toolchain
        run: |
          chmod +x ./build_compiler.sh
