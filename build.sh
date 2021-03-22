@@ -1,6 +1,6 @@
 #!/bin/sh
 
-sudo apt install nasm
+sudo apt install nasm mtools
 
 export TARGET=i686-elf
 
