@@ -19,7 +19,7 @@ KinuxOS is an operating system for x86_64 based systems. It is based on the Kinu
 8. Terminal (Supports Basic Commands)
 
 # Building
-To build KinuxOS you need i686-elf-gcc, nasm and many other packages, to ***install them*** run ```sh ./build_compiler.sh```. If you have already installed the i686-elf-gcc, modify the PATH in the ```build.sh``` and run it.
+To build KinuxOS you need i686-elf-gcc, nasm and many other packages, to install the packages and build the compiler, run ```sh ./build_compiler.sh```. If you have already installed the i686-elf-gcc, modify the PATH in the ```build.sh``` and run it.
 
 If you want to build the libc, run ```sh ./build_libc.sh```.
 
