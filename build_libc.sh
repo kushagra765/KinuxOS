@@ -16,7 +16,7 @@ i686-elf-gcc -Wall -Wextra -O2 -I./include/ -c ../libc/ctype/isdigit.c -o ../lib
 i686-elf-gcc -Wall -Wextra -O2 -I./include/ -c ../libc/ctype/islower.c -o ../libc-build/islower.o
 
 # Build errno/
-i686-elf-gcc -Wall -Wextra -O2 -c ../libc/errno/errno.c -o ../libc-build/errno.o
+i686-elf-gcc -Wall -Wextra -O2 -I./include/ -c ../libc/errno/errno.c -o ../libc-build/errno.o
 
 # Build string/
-i686-elf-gcc -Wall -Wextra -O2 -c ../libc/string/strcmp.c -o ../libc-build/strcmp.o
+i686-elf-gcc -Wall -Wextra -O2 -I./include/ -c ../libc/string/strcmp.c -o ../libc-build/strcmp.o
