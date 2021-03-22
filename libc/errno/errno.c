@@ -2,6 +2,6 @@
  * Author - @kushagra765
  */
 
-#include "../../include/errno.h"
+#include <errno.h>
 
 int errno;
