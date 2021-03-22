@@ -1,2 +1,2 @@
-.github/
-./build-os/build.sh
+*.o
+*.yml
