@@ -5,6 +5,9 @@
  * Author - @kushagra765
  */
 
+#define MIN_DIGIT 0
+#define MAX_DIGIT 9
+
 int isalpha(int ch);
 int isalnum(int ch);
 int isblank(int ch);
