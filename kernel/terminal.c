@@ -29,7 +29,8 @@ void run(char command[]) {
         
     }
     else {
-        putstr("Command Not Found!\n", COLOR_BLK, COLOR_WHT); 
+        putstr(command, COLOR_BLK, COLOR_WHT);
+        putstr(" : Command Not Found!\n", COLOR_BLK, COLOR_WHT);
     }
     
     // Clear the command[] array
