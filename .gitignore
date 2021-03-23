@@ -1,3 +1,6 @@
 *.o
 *.yml
-/fs/vfs/
+
+# Ignore the VFS
+/fs/vfs/vfs.c
+/fs/vfs/vfs.h
