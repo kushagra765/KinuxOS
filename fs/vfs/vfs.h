@@ -25,6 +25,6 @@ struct dirent_vfs {
 typedef uint32_t (*read_vfs_t)(struct node_vfs*, uint32_t, uint32_t, uint8_t);
 uint32_t read_vfs(node_vfs_t *node, uint32_t offset, uint32_t f_size, uint8_t *buf);
 
-node_vfs_t *vfs_root;
+void init_vfs();
 
 #endif //_VFS_H
