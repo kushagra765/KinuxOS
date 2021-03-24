@@ -6,5 +6,5 @@
 #include "uname.h"
 
 void uname() {
-     putstr("KinuxOS\n", COLOR_BLK, COLOR_WHT);
+     putstr("KinuxOS\n", COLOR_WHT, COLOR_BLK);
 }
