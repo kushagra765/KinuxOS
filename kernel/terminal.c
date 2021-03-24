@@ -8,7 +8,7 @@
 #include <string.h>
 
 void terminal() {
-    putstr("user@Kinux: ", COLOR_BLK, COLOR_WHT);
+    putstr("user@Kinux: ", COLOR_WHT, COLOR_BLK);
 }
 
 void run(char command[]) {
@@ -20,7 +20,7 @@ void run(char command[]) {
         uname();
     }
     else if (strcmp(command, "help")==0) {
-        putstr("Available Commands: version uname help\n", COLOR_BLK, COLOR_WHT);
+        putstr("Available Commands: version uname help\n", COLOR_WHT, COLOR_BLK);
     }
 
     /* If the user presses the enter key without entering any command, do nothing */
@@ -29,14 +29,14 @@ void run(char command[]) {
         
     }
     else {
-        putstr(command, COLOR_BLK, COLOR_WHT);
-        putstr(" : Command Not Found!\n", COLOR_BLK, COLOR_WHT);
+        putstr(command, COLOR_WHT, COLOR_BLK);
+        putstr(" : Command Not Found!\n", COLOR_WHT, COLOR_BLK);
     }
     
     // Clear the command[] array
     for (int i=0; command[i] != '\0'; i++) {
         command[i] = '\0';
     }
-
-    putstr("user@Kinux: ", COLOR_BLK, COLOR_WHT);
+    
+    putstr("user@Kinux: ", COLOR_WHT, COLOR_BLK);
 }
