@@ -76,6 +76,12 @@ void putstr(const char *string, const unsigned char fg_color, const unsigned cha
     }
 }
 
+// printm() - Same as putstr but does not require the name of the colors
+void printm(const char *str) {
+   while(*str != '\0') {
+        putchar(*str++, COLOR_WHT, COLOR_BLK);
+   }
+}
 
 unsigned short get_cursor_pos() {
     unsigned short position = 0;

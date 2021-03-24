@@ -3,6 +3,7 @@
 
 /* drivers/vga/vga.h
  * Author - @jaychandra6
+ * Edited by - @kushagra765 (Added printm)
  */
 
 //define basic constants
@@ -61,6 +62,7 @@ void clearwin(const unsigned char fg_color, const unsigned char bg_color);
 void putchar(const char character, const unsigned char fg_color, const unsigned char bg_color);
 
 //print a string to the screen
+void printm(const char *str);
 void putstr(const char *string, const unsigned char fg_color, const unsigned char bg_color);
 
 //get the cursor position
