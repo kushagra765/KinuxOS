@@ -26,6 +26,5 @@ void init() {
      init_keyboard();
      __asm__ volatile("sti");
      putstr("System Loaded\n", COLOR_GRN, COLOR_BLK);
-     printm("KERNEL LOADED\n");
      terminal();
 }
