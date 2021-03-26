@@ -21,9 +21,10 @@ void init() {
      init_isr();
      printm("Loading the IRQ... ");
      init_irq();
-     printm("Loading Drivers...\n");
+     printm("Loading Drivers... ");
      init_timer(50);
      init_keyboard();
+     putstr("[ OK ]\n", COLOR_GRN, COLOR_BLK);
      __asm__ volatile("sti");
      putstr("System Loaded\n", COLOR_GRN, COLOR_BLK);
      terminal();
