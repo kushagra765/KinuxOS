@@ -12,16 +12,16 @@
 #include <terminal.h>
 
 void init() {
-     putstr("[KERNEL] Loading Kernel\n", COLOR_WHT, COLOR_BLK); 
-     putstr("[KINUX] Loading the GDT...\n", COLOR_WHT, COLOR_BLK);
+     printm("Loading Kernel\n");
+     printm("Loading the GDT... ");
      init_gdt();
-     putstr("[KINUX] Loading the IDT...\n", COLOR_WHT, COLOR_BLK);
+     printm("Loading the IDT... ");
      init_idt();
-     putstr("[KINUX] Loading the ISR...\n", COLOR_WHT, COLOR_BLK);
+     printm("Loading the ISR... ");
      init_isr();
-     putstr("[KINUX] Loading the IRQ...\n", COLOR_WHT, COLOR_BLK);
+     printm("Loading the IRQ... ");
      init_irq();
-     putstr("[KINUX] Loading Drivers...\n", COLOR_WHT, COLOR_BLK);
+     printm("Loading Drivers...\n");
      init_timer(50);
      init_keyboard();
      __asm__ volatile("sti");
