@@ -37,6 +37,7 @@ void init_isr() {
      set_gate_idt(29, (uintptr_t)isr29, 0x08, 0x8E);
      set_gate_idt(30, (uintptr_t)isr30, 0x08, 0x8E);
      set_gate_idt(31, (uintptr_t)isr31, 0x08, 0x8E);
+     putstr("[ OK ]\n", COLOR_GRN, COLOR_BLK);
 }
 
 const char *exceptions[] = {
@@ -81,5 +82,6 @@ void handler_isr(struct registers *regs) {
      
      if (regs->int_no <= 31) {
         putstr(exceptions[regs->int_no], COLOR_RED, COLOR_WHT);
+        for (;;);
      }
 }

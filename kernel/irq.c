@@ -3,6 +3,7 @@
  */
 
 #include <ports.h>
+#include <vga.h>
 #include "irq.h"
 #include "idt.h"
 #include "isr.h"
@@ -52,6 +53,7 @@ void init_irq() {
      set_gate_idt(45, (uintptr_t)irq13, 0x08, 0x8E);
      set_gate_idt(46, (uintptr_t)irq14, 0x08, 0x8E);
      set_gate_idt(47, (uintptr_t)irq15, 0x08, 0x8E);
+     putstr("[ OK ]\n", COLOR_GRN, COLOR_BLK);
 }
 
 void handler_irq(struct registers *regs) {

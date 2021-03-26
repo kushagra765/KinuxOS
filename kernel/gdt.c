@@ -1,4 +1,5 @@
 #include <stdint.h>
+#include <vga.h>
 #include "gdt.h"
 
 struct entry_gdt {
@@ -45,4 +46,6 @@ void init_gdt() {
    set_gate_gdt(2, 0, 0xFFFFFFFF, 0x92, 0xCF);
      
    gdt_load();
+
+   putstr("[ OK ]\n", COLOR_GRN, COLOR_BLK);
 }
