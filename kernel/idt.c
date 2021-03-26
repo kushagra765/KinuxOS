@@ -1,5 +1,6 @@
 #include <stdint.h>
 #include <string.h>
+#include <vga.h>
 #include "idt.h"
 
 struct entry_idt {
@@ -36,4 +37,6 @@ void init_idt() {
      memset(&idt, 0, sizeof(struct entry_idt)*256);
      
      idt_load();
+
+     putstr("[ OK ]\n", COLOR_GRN, COLOR_BLK);
 }

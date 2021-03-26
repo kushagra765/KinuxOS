@@ -59,7 +59,7 @@ void handler_keyboard() {
      }
      else {
        uint8_t input = keyboard_layout[keyboard_key_scancode];
-       putchar(input, COLOR_BLK, COLOR_WHT);
+       putchar(input, COLOR_WHT, COLOR_BLK);
        save_buf(input);
     }
 }

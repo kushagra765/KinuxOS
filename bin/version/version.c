@@ -6,5 +6,5 @@
 #include "version.h"
 
 void version() {
-     putstr("KinuxOS-v0.2\n", COLOR_BLK, COLOR_WHT);
+     putstr("KinuxOS-v0.2\n", COLOR_WHT, COLOR_BLK);
 }

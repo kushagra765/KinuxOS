@@ -27,10 +27,10 @@ nasm -felf32 ./kernel/load_idt.asm -o ./build/load_idt.o
 nasm -felf32 ./kernel/load_isr.asm -o ./build/load_isr.o
 nasm -felf32 ./kernel/load_irq.asm -o ./build/load_irq.o
 i686-elf-gcc -Wall -Wextra -O2 -I./drivers/vga/ -I./drivers/keyboard -I./drivers/timer/ -I./include/ -I./include/kinux/ -I./kernel/ -c ./init/init.c -o ./build/init.o
-i686-elf-gcc -Wall -Wextra -O2 -I./include/ -c ./kernel/gdt.c -o ./build/gdt.o
-i686-elf-gcc -Wall -Wextra -O2 -I./include/ -c ./kernel/idt.c -o ./build/idt.o
-i686-elf-gcc -Wall -Wextra -O2 -I./drivers/vga/ -I./include/ -c ./kernel/isr.c -o ./build/isr.o
-i686-elf-gcc -Wall -Wextra -O2 -I./include/ -I./include/kinux/ -c ./kernel/irq.c -o ./build/irq.o
+i686-elf-gcc -Wall -Wextra -O2 -I./drivers/vga/ -I./include/ -c ./kernel/gdt.c -o ./build/gdt.o
+i686-elf-gcc -Wall -Wextra -O2 -I./drivers/vga/ -I./include/ -c ./kernel/idt.c -o ./build/idt.o
+i686-elf-gcc -Wall -Wextra -O2 -I./drivers/vga/ -I./drivers/vga/ -I./include/ -c ./kernel/isr.c -o ./build/isr.o
+i686-elf-gcc -Wall -Wextra -O2 -I./drivers/vga/ -I./include/ -I./include/kinux/ -c ./kernel/irq.c -o ./build/irq.o
 i686-elf-gcc -Wall -Wextra -O2 -I./include/ -I./drivers/vga/ -I./bin/version/ -I./bin/uname/ -c ./kernel/terminal.c -o ./build/terminal.o
 
 # Link KinuxOS
