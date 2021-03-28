@@ -3,6 +3,7 @@
  */
 
 #include <ports.h>
+#include <kernel.h>
 #include "vga.h"
 
 volatile vga_char *TEXT_AREA = (vga_char*) VGA_START;
