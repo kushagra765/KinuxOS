@@ -2,15 +2,15 @@
  * Author - @kushagra765
  */
 
-#include <vga.h>
-#include <keyboard.h>
-#include <timer.h>
+#include <vga/vga.h>
+#include <keyboard/keyboard.h>
+#include <timer/timer.h>
+#include <kinux/log.h>
+#include <kinux/terminal.h>
 #include <idt.h>
 #include <gdt.h>
 #include <isr.h>
 #include <irq.h>
-#include <log.h>
-#include <terminal.h>
 
 void init() {
      printm("Loading Kernel\n");

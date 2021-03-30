@@ -1,5 +1,5 @@
 #include <stdint.h>
-#include <vga.h>
+#include <vga/vga.h>
 #include "gdt.h"
 
 struct entry_gdt {

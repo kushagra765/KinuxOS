@@ -2,7 +2,7 @@
  * Author - @kushagra765
  */
 
-#include <vga.h>
+#include <vga/vga.h>
 #include "uname.h"
 
 void uname() {

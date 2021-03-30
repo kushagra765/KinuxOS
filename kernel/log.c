@@ -2,8 +2,8 @@
  * Author - @kushagra765
  */
 
-#include <vga.h>
-#include <log.h>
+#include <vga/vga.h>
+#include <kinux/log.h>
 
 struct log *log_info;
 

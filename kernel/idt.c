@@ -1,6 +1,6 @@
 #include <stdint.h>
 #include <string.h>
-#include <vga.h>
+#include <vga/vga.h>
 #include "idt.h"
 
 struct entry_idt {
