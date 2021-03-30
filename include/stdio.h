@@ -5,10 +5,7 @@
 
 /* include/stdio.h
  * Author - @kushagra765
- *
- * If you are using a function that has "FILE *" like fprintf(), use #include <stdio.h> not "../include/stdio.h"
- * or you will get errors that "FILE *" is not defined!
-*/
+ */
 
 int printf(const char *format, ...);
 int scanf(const char *format, ...);

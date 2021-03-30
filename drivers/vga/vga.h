@@ -3,7 +3,6 @@
 
 /* drivers/vga/vga.h
  * Author - @jaychandra6
- * Edited by - @kushagra765 (Added printm)
  */
 
 //define basic constants
@@ -76,7 +75,7 @@ void hide_cursor();
 void advance_cursor();
 void set_cursor_pos(unsigned char x, unsigned char y);
 
-
 //scroll line
 void scroll_line();
+
 #endif //_VGA_H

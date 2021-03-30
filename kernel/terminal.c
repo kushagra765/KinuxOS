@@ -6,6 +6,7 @@
 #include <uname.h>
 #include <version.h>
 #include <string.h>
+#include <log.h>
 
 void terminal() {
     putstr("user@Kinux: ", COLOR_WHT, COLOR_BLK);
@@ -19,8 +20,11 @@ void run(char command[]) {
     else if (strcmp(command, "uname")==0) {
         uname();
     }
+    else if (strcmp(command, "log")==0) {
+        show_log();
+    }
     else if (strcmp(command, "help")==0) {
-        putstr("Available Commands: version uname help\n", COLOR_WHT, COLOR_BLK);
+        putstr("Available Commands: version uname log help\n", COLOR_WHT, COLOR_BLK);
     }
 
     /* If the user presses the enter key without entering any command, do nothing */

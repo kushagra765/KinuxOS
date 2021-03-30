@@ -9,6 +9,7 @@
 #include <gdt.h>
 #include <isr.h>
 #include <irq.h>
+#include <log.h>
 #include <terminal.h>
 
 void init() {
@@ -17,14 +18,16 @@ void init() {
      init_gdt();
      printm("Loading the IDT... ");
      init_idt();
-     printm("Loading the ISR... ");
+     printm("Loading the ISR's... ");
      init_isr();
-     printm("Loading the IRQ... ");
+     printm("Loading the IRQ's... ");
      init_irq();
      printm("Loading Drivers... ");
      init_timer(50);
      init_keyboard();
      putstr("[ OK ]\n", COLOR_GRN, COLOR_BLK);
+     printm("Starting Log Service... ");
+     init_log();
      __asm__ volatile("sti");
      putstr("System Loaded\n", COLOR_GRN, COLOR_BLK);
      terminal();

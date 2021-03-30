@@ -5,7 +5,6 @@
  * Author - @kushagra765
  */
 
-void panic(const char *string);
-void printm(const char *string);
+void printm(const char *str);
 
 #endif //_KINUX_KERNEL_H
