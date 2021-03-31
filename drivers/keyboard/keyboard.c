@@ -2,10 +2,10 @@
  * Author - @kushagra765
  */
 
-#include <ports.h>
-#include <vga.h>
+#include <kinux/ports.h>
+#include <vga/vga.h>
+#include <kinux/terminal.h>
 #include <irq.h>
-#include <terminal.h>
 #include <stdint.h>
 #include "keyboard.h"
 

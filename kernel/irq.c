@@ -2,8 +2,8 @@
  * Author - @kushagra765
  */
 
-#include <ports.h>
-#include <vga.h>
+#include <kinux/ports.h>
+#include <vga/vga.h>
 #include "irq.h"
 #include "idt.h"
 #include "isr.h"

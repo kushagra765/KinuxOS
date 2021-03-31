@@ -2,11 +2,11 @@
  * Author - @kushagra765
  */
 
-#include <vga.h>
-#include <uname.h>
-#include <version.h>
+#include <vga/vga.h>
+#include <uname/uname.h>
+#include <version/version.h>
+#include <kinux/log.h>
 #include <string.h>
-#include <log.h>
 
 void terminal() {
     putstr("user@Kinux: ", COLOR_WHT, COLOR_BLK);

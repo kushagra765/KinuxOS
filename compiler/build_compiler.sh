@@ -51,3 +51,8 @@ make all-gcc
 make all-target-libgcc
 make install-gcc
 make install-target-libgcc
+
+# Delete the src directory
+cd ..
+cd ..
+rm -rf src/

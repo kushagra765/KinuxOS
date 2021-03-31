@@ -1,4 +1,4 @@
-#include <vga.h>
+#include <vga/vga.h>
 #include "isr.h"
 #include "idt.h"
 #include <stdint.h>
