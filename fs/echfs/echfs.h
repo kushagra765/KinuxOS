@@ -17,8 +17,7 @@ typedef echfs_block_0 {
   char fs_signature[9];
   uint64_t echfs_block_count;
   uint64_t length_main_directory;
-}
-__attribute__((packed));
+} __attribute__((packed));
 
 typedef struct echfs_entry_t {
   uint64_t echfs_parent_id;
