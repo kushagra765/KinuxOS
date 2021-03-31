@@ -2,9 +2,9 @@
  * Author - @kushagra765
  */
 
-#include <vga/vga.h>
 #include "uname.h"
+#include <vga/vga.h>
 
 void uname() {
-     putstr("KinuxOS\n", COLOR_WHT, COLOR_BLK);
+  putstr("KinuxOS\n", COLOR_WHT, COLOR_BLK);
 }

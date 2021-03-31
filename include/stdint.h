@@ -3,7 +3,7 @@
 
 /* include/stdint.h
  * Author - @kushagra765
-*/
+ */
 
 typedef unsigned char uint8_t;
 typedef unsigned short int uint16_t;

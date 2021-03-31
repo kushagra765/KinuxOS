@@ -6,8 +6,8 @@
  */
 
 struct log {
-     int enabled;
-     const char *last_log;
+  int enabled;
+  const char *last_log;
 };
 
 void init_log();

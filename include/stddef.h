@@ -3,7 +3,7 @@
 
 /* include/stddef.h
  * Author - @kushagra765
-*/
+ */
 
 typedef unsigned long size_t;
 
