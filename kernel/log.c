@@ -2,6 +2,7 @@
  * Author - @kushagra765
  */
 
+#include <kinux/kernel.h>
 #include <kinux/log.h>
 #include <vga/vga.h>
 
@@ -26,5 +27,12 @@ void show_log() {
 
 void init_log() {
   log_info->enabled = 1;
-  putstr("[ OK ]\n", COLOR_GRN, COLOR_BLK);
+
+  /* Print OK only when log_info->enabled is set to 1 */
+  if (log_info->enabled == 1) {
+    putstr("[ OK ]\n", COLOR_GRN, COLOR_BLK);
+  } else {
+    putstr("[ FAILED ]\n", COLOR_RED, COLOR_BLK);
+    panic("Cannot load log service!\n");
+  }
 }
