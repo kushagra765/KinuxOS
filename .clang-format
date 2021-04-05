@@ -6,12 +6,11 @@ AlignEscapedNewlines: Right
 AlignTrailingComments: true
 AllowAllConstructorInitializersOnNextLine: true
 AllowAllParametersOfDeclarationOnNextLine: false
-AlignConsecutiveDeclarations: None
-AlignOperands: DontAlign
+AlignConsecutiveDeclarations: false
+AlignOperands: false
 AllowAllArgumentsOnNextLine: false
 AllowShortBlocksOnASingleLine: Never
 AllowShortCaseLabelsOnASingleLine: false
-AllowShortEnumsOnASingleLine: false
 AllowShortFunctionsOnASingleLine: None
 AllowShortIfStatementsOnASingleLine: Never
 AllowShortLoopsOnASingleLine: false
