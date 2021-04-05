@@ -9,7 +9,7 @@ export PATH="./compiler/toolchain/bin:$PATH"
 
 # Build KinuxOS
 mkdir build
-nasm -felf32 ./boot/boot.asm -o ./build/boot.o
+nasm -f elf32 ./boot/boot.asm -o ./build/boot.o
 
 # Build Commands
 i686-elf-gcc -Wall -Wextra -O2 -I./drivers/ -c ./bin/version/version.c -o ./build/version.o
@@ -29,9 +29,9 @@ nasm -felf32 ./kernel/load_irq.asm -o ./build/load_irq.o
 i686-elf-gcc -Wall -Wextra -O2 -I./drivers/ -I./include/ -I./kernel/ -c ./init/init.c -o ./build/init.o
 i686-elf-gcc -Wall -Wextra -O2 -I./drivers/ -I./include/ -c ./kernel/gdt.c -o ./build/gdt.o
 i686-elf-gcc -Wall -Wextra -O2 -I./drivers/ -I./include/ -c ./kernel/idt.c -o ./build/idt.o
-i686-elf-gcc -Wall -Wextra -O2 -I./drivers/ -I./drivers/ -I./include/ -c ./kernel/isr.c -o ./build/isr.o
+i686-elf-gcc -Wall -Wextra -O2 -I./drivers/ -I./include/ -c ./kernel/isr.c -o ./build/isr.o
 i686-elf-gcc -Wall -Wextra -O2 -I./drivers/ -I./include/ -c ./kernel/irq.c -o ./build/irq.o
-i686-elf-gcc -Wall -Wextra -O2 -I./include/ -I./drivers/ -I./bin/ -c ./kernel/terminal.c -o ./build/terminal.o
+i686-elf-gcc -Wall -Wextra -O2 -I./bin/ -I./drivers/ -I./include/ -c ./kernel/terminal.c -o ./build/terminal.o
 i686-elf-gcc -Wall -Wextra -O2 -I./drivers/ -I./include/ -c ./kernel/log.c -o ./build/log.o
 i686-elf-gcc -Wall -Wextra -O2 -I./drivers/ -I./include/ -c ./kernel/panic.c -o ./build/panic.o
 
