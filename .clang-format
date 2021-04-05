@@ -4,11 +4,9 @@ AccessModifierOffset: -2
 AlignAfterOpenBracket: Align
 AlignEscapedNewlines: Right
 AlignTrailingComments: true
-AlignAfterOpenBracket: AlwaysBreak
 AllowAllConstructorInitializersOnNextLine: true
 AllowAllParametersOfDeclarationOnNextLine: false
 ReflowComments:  true
 SortIncludes:    true
 UseTab:          Never
-BinPackParameters: false
 ...
