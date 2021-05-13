@@ -19,24 +19,15 @@ mkdir ./toolchain
 mkdir ./src
 cd ./src
 
-if [ -e binutils-2.36.tar.gz ]; then
-   echo "Found binutils archive"
-else
-   wget https://ftp.gnu.org/gnu/binutils/binutils-2.36.tar.gz
-fi
+wget https://ftp.gnu.org/gnu/binutils/binutils-2.36.1.tar.gz
+wget https://ftp.gnu.org/gnu/gcc/gcc-10.3.0/gcc-10.3.0.tar.gz
 
-if [ -e gcc-10.2.0.tar.gz ]; then
-   echo "Found gcc archive"
-else
-   wget https://ftp.gnu.org/gnu/gcc/gcc-10.2.0/gcc-10.2.0.tar.gz
-fi
-
-tar -xf gcc-10.2.0.tar.gz
-tar -xf binutils-2.36.tar.gz
+tar -xf gcc-10.3.0.tar.gz
+tar -xf binutils-2.36.1.tar.gz
 
 mkdir binutils-build
 cd binutils-build
-../binutils-2.36/configure --target=$TARGET --prefix="$PREFIX" --with-sysroot --disable-nls --disable-werror
+../binutils-2.36.1/configure --target=$TARGET --prefix="$PREFIX" --with-sysroot --disable-nls --disable-werror
 make
 make install
 
@@ -46,7 +37,7 @@ which -- $TARGET-as || echo $TARGET-as not found
  
 mkdir gcc-build
 cd gcc-build
-../gcc-10.2.0/configure --target=$TARGET --prefix="$PREFIX" --disable-nls --enable-languages=c,c++ --without-headers
+../gcc-10.3.0/configure --target=$TARGET --prefix="$PREFIX" --disable-nls --enable-languages=c,c++ --without-headers
 make all-gcc
 make all-target-libgcc
 make install-gcc
