@@ -9,7 +9,7 @@
 
 /* PS/2 Keyboard Driver */
 
-struct keyboard_buf {
+struct keyboard_data {
   uint8_t buf;
   int num;
 };
