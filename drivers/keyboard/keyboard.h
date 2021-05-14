@@ -9,11 +9,6 @@
 
 /* PS/2 Keyboard Driver */
 
-struct keyboard_data {
-  uint8_t buf;
-  int num;
-};
-
 #define DATA_PORT 0x60
 #define STATUS_PORT 0x64
 
