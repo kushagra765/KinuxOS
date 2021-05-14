@@ -9,8 +9,6 @@
 #include <stdint.h>
 #include <vga/vga.h>
 
-struct keyboard_data *kbd_data;
-
 uint8_t keyboard_layout[128] = {
     0,   27,   '1',  '2', '3',  '4', '5', '6', '7', '8', '9', '0', '-',
     '=', '\b', '\t', 'q', 'w',  'e', 'r', 't', 'y', 'u', 'i', 'o', 'p',
@@ -36,14 +34,17 @@ void handler_keyboard() {
   }
 }
 
+uint8_t buf[40];
+int num = 0;
+
 void save_buf(uint8_t input) {
 
-  if (input == '\n') {
-    run(kbd_data->buf);
-    kbd_data->num = 0;
+    if (input == '\n') {
+    run(buf);
+    num = 0;
   } else {
-    kbd_data->buf[kbd_data->num] = input;
-    kbd_data->num++;
+    buf[num] = input;
+    num++;
   }
 }
 
