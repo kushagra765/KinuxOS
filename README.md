@@ -1,8 +1,4 @@
 # KinuxOS
-[![GitHub CI](https://github.com/KinuxOS/KinuxOS/actions/workflows/ci.yml/badge.svg)](https://github.com/KinuxOS/KinuxOS/actions/workflows/ci.yml)
-<br/>
-[![CodeFactor](https://www.codefactor.io/repository/github/kinuxos/kinuxos/badge)](https://www.codefactor.io/repository/github/kinuxos/kinuxos)
-<br/>
 ![License](https://img.shields.io/badge/license-Apache%202.0-blue?style=flat-square)
 <br/>
 
