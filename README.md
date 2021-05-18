@@ -24,7 +24,6 @@ To contribute to KinuxOS, please read the [CONTRIBUTING.md](https://github.com/k
 
 # Other Projects
 - HOS-x86 (The KinuxOS terminal is based on the HOS-x86 kshell.)
-- echfs
 
 # License
 KinuxOS is licensed under _Apache License 2.0_, see the [LICENSE](https://github.com/kushagra765/KinuxOS/blob/main/LICENSE) file for more info.
