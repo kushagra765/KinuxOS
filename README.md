@@ -17,7 +17,7 @@ To build KinuxOS you need i686-elf-gcc, nasm and many other packages, to install
 If you want to build the libc, run `sh ./build_libc.sh`.
 
 # Contributing
-To contribute to KinuxOS, please read the [CONTRIBUTING.md](https://github.com/kushagra765/KinuxOS/blob/dev/CONTRIBUTING.md) file.
+To contribute to KinuxOS, please read the [CONTRIBUTING.md](https://github.com/kushagra765/KinuxOS/blob/main/CONTRIBUTING.md) file.
 
 # Other Projects
 - HOS-x86 (The KinuxOS terminal is based on the HOS-x86 kshell.)
