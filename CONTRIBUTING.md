@@ -1,7 +1,6 @@
 # Contributing
-Please contribute to the ***dev*** branch of this repository.
 
-# Format
+## Format
 If you add some files in this repository, please mention the directory in which the file is being created and the name of the ***original author*** in this format:
 
 For .c files:
